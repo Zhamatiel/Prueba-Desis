@@ -1,0 +1,13 @@
+Versión de PHP: 7.4.26
+Apache/2.4.51 (Win64) PHP/7.4.26
+Versión del cliente de base de datos: libmysql - mysqlnd 7.4.26
+phpMyAdmin versión: 5.1.1
+
+
+-Para ejecutar el proyecto yo utilizo WampServer 3.2 para trabajar con un server local, para ello en la carpeta www del wampServer que se encuentra en la raiz de la carpeta donde esta
+instado se debe colocar la carpeta del proyecto (Desis-prueba) una vez guardada la carpeta se debe levantar el programa y ejecutar el http://localhost/phpmyadmin y agregar las credenciales
+para esta prueba use las por defecto que son usuario: root y la contraseña se deja en blanco, dentro de http://localhost/phpmyadmin se debe crear la base de datos e importar el script que 
+dejo en la carpeta raiz del proyecto se llama bdvoto, una vez cargada la base de datos se ejecuta el programa de la siguiente manera en el navegador se debe poner http://localhost/desis-prueba/
+con esto ya deberia estar listo, de no ser asi verificar el archivo conexion.php y ver si el server, la base de datos, el usuario y la contraseña corresponda a las de usted. una vez realizado esto
+el programa esta funcionando de manera local, de la misma manera si se desea agregar a un servidor en linea lo unico que se debe cambiar el archivo conexion.php y proporcionar el server y las credentiales 
+correspondientes a dicho server.

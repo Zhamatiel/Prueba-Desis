@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+        <h1>Formulario de votacion</h1>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        
+        <label for="alias">Alias:</label>
+        <input type="text" id="alias" name="alias" required oninput="validarAlias(alias)">
+        
+        <label for="rut">RUT:</label>
+        <input type="text" id="rut" name="rut" required oninput="validarCampoRut(event)" >
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required oninput="validarEmail(email)">
+        
+        <label for="region">Región:</label>
+        <select id="region" name="region" required>
+          <option value="">Seleccione una región</option>
+        </select>
+        
+        <label for="comuna">Comuna:</label>
+        <select id="comuna" name="comuna" required>
+          <option value="">Seleccione una comuna</option>
+        </select>
+
+        <label for="candidato">Seleccione un candidato:</label>
+        <select id="candidato" name="candidato" required>
+            <option value="">Seleccione un candidato</option>
+        </select>
+
+        <fieldset>
+            <legend>Cómo se enteró de nosotros:</legend>
+            <label><input type="checkbox" name="fuente" value="web">Web</label>
+            <label><input type="checkbox" name="fuente" value="tv">TV</label>
+            <label><input type="checkbox" name="fuente" value="redes_sociales">Redes sociales</label>
+            <label><input type="checkbox" name="fuente" value="amigo">Amigo</label>
+        </fieldset>
+
+        <input class="votar" type="submit" id="guardar" onclick="validarCampos(); return false;" value="Enviar">
+
+
+    </div>
+  </body>
+  <script src="js/Persona.js"></script>
+  <script src="assets/js/jquery.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/candidato.js"></script>
+  <script src="js/regiones.js"></script>
+  <script src="js/validarCampos.js"></script> 
+  <script src="./js/validarRut.js"></script>
+  <script src="assets/plugins/SweetAlert/dist/sweetalert2.all.min.js"></script>
+</html>
